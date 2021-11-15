@@ -18,6 +18,7 @@ import * as AnnotOptions from "../AnnotOptions/AnnotOptions";
  * 
  * After enabling Workflows in Actions tab of repo, edited this comment to trigger GitHub Actions bot.
  * Add another comment to trigger GitHub Actions bot.
+ * Add a third comment to trigger GitHub Actions bot. Edit this third comment so that there are multiple commits in this PR.
  * 
  * To represent functions, please use {@link func}.
  * To represent "one of Config.Buttons values" or "an array of 
