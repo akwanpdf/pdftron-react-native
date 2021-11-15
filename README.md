@@ -12,6 +12,8 @@
 ## API
 APIs are available on the [API page](API.md).
 
+(Add a change to README.md to test what happens with GitHub Actions when no JS files need to be updated).
+
 ## Prerequisites
 - No license key is required for trial. However, a valid commercial license key is required after trial.
 - npm or yarn
