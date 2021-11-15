@@ -17,6 +17,7 @@ import * as AnnotOptions from "../AnnotOptions/AnnotOptions";
  * Also used to generate prop types for TS users.
  * 
  * After enabling Workflows in Actions tab of repo, edited this comment to trigger GitHub Actions bot.
+ * Add another comment to trigger GitHub Actions bot.
  * 
  * To represent functions, please use {@link func}.
  * To represent "one of Config.Buttons values" or "an array of 
