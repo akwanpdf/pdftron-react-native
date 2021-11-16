@@ -1,8 +1,9 @@
 name: Transpile TS
 
 on:
-  push:
-    branches: [master] # <-- Change this to the primary branch (for example, "dev" if you want all changes to `dev` to be watched).
+  pull_request:
+    # types: [opened, edited]
+    branches: [master]
 
 jobs:
   build:
@@ -42,4 +43,4 @@ jobs:
         with:
           force: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: master # <-- Change this to the branch where you want builds to be (for example, "master" if you want changes to the primary branch to be applied to `master`).
+          branch: ${GITHUB_REF##*/} # <-- Change this to the branch where you want builds to be (for example, "master" if you want changes to the primary branch to be applied to `master`).
