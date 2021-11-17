@@ -43,4 +43,4 @@ jobs:
         with:
           force: true
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${GITHUB_REF##*/} # <-- Change this to the branch where you want builds to be (for example, "master" if you want changes to the primary branch to be applied to `master`).
+          branch: ${{GITHUB_REF##*/}} # <-- Change this to the branch where you want builds to be (for example, "master" if you want changes to the primary branch to be applied to `master`).
