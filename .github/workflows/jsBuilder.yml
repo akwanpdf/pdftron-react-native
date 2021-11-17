@@ -1,8 +1,9 @@
 name: Transpile TS
 
 on:
-  push:
-    branches: [master] # <-- Change this to the primary branch (for example, "dev" if you want all changes to `dev` to be watched).
+  pull_request:
+    # types: [opened, edited]
+    branches: [master]
 
 jobs:
   build:
