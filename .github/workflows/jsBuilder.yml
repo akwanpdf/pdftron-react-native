@@ -2,6 +2,7 @@ name: Transpile TS
 
 on:
   pull_request:
+    types: [opened, synchronize]
     branches: [master]
 
 jobs:
