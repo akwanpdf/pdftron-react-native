@@ -37,11 +37,10 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git commit -m "Updating JS files" -a || echo "No changes to commit"
-          git push origin HEAD:${GITHUB_REF##*/}
 
-      # - name: Push changes
-      #   uses: ad-m/github-push-action@v0.6.0
-      #   with:
-      #     force: true
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}
-      #     branch: ${GITHUB_REF##*/} # <-- Change this to the branch where you want builds to be (for example, "master" if you want changes to the primary branch to be applied to `master`).
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
+        with:
+          force: true
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
