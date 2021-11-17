@@ -14,6 +14,7 @@ jobs:
         with:
           persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal token.
           fetch-depth: 0 # otherwise, you will failed to push refs to dest repo.
+          ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Install dependencies
         run: | 
@@ -37,10 +38,11 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git commit -m "Updating JS files" -a || echo "No changes to commit"
+          git push
 
-      - name: Push changes
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          force: true
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.event.pull_request.head.ref }}
+      # - name: Push changes
+      #   uses: ad-m/github-push-action@v0.6.0
+      #   with:
+      #     force: true
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     branch: ${{ github.event.pull_request.head.ref }}
