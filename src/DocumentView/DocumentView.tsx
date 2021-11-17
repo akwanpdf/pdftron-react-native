@@ -22,6 +22,10 @@ import * as AnnotOptions from "../AnnotOptions/AnnotOptions";
  * Add a fourth comment to trigger GitHub Actions bot.
  * Add a fifth comment to trigger GitHub Actions bot.
  * Add a sixth comment to trigger GitHub Actions bot.
+ * Add a seventh comment to trigger GitHub Actions bot.
+ * Add an eighth comment to trigger GitHub Actions bot.
+ * Add a ninth comment to trigger GitHub Actions bot.
+ * Add a tenth comment to trigger GitHub Actions bot.
  * 
  * To represent functions, please use {@link func}.
  * To represent "one of Config.Buttons values" or "an array of 
